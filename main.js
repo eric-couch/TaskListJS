@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const taskListName = document.getElementById("TaskListName");
         taskListName.innerText = createListName;
+        let listOfTasks = document.createElement("ul");
+        let task = document.createElement("li");
+        let taskDiv = document.createElement("div");
+        taskDiv.contentEditable = true;
+        task.appendChild(taskDiv);
+        listOfTasks.appendChild(task);
+        document.getElementById("TaskList").appendChild(listOfTasks);
+
     })
 })
 
